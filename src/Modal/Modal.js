@@ -11,7 +11,7 @@ function Modal(props){
         <animated.div style={{
             transform: x.interpolate(x => `translate3d(${x * -1}%, 0,0)`)
         }} className='modal'>
-            <h2>Funky Fresh</h2>
+            <h2>Who Is Nu Strut</h2>
         </animated.div>
     )
 }

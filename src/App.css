@@ -23,115 +23,196 @@ h3{
 
 @media screen and (max-width: 600px){
 		
-a{
-	text-decoration: none;
-	color:white;
-	background-color: transparent;
-}
 	
-header{
-	display: flex;
-	align-items: center;
-	margin: 0;
-	padding: 0;
-	height: 250px;
-	background-color: #DFB0CD;
-	/* background-image:url("yummy/pinkfluff.gif");
-	background-blend-mode: darken;
-	background-repeat: repeat-y; */
+  a{
+    text-decoration: none;
+    color:white;
+    background-color: transparent;
+  }
+  header{
+    margin: 0;
+    padding: 5px;
+    height: 25vh;
+    position: relative;
+    background-color: #f59a4f;
+    /* background-image:url("images/transparent.gif"); */
+    background-position: center;
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    border: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+  }
+  
+  header img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    display: block;
+    padding: 5%;
 }
-	
-main{
-	display: flex;
-	justify-content: center;
-}
+  
+  h2{
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+    margin-top: 0;
+    background-color: transparent;
+  }
+  
+  h3{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+  }
 
-h2{
-	font-family: header2;
-	font-size: 60px;
-	text-align: center;
-	color: white;
-	border: 1px solid white;
-	border-left: none;
-	border-right: none;
-	margin-top: 0;
-	background-color: transparent;
-}
-	
-header h1{
-	display: block;
-	font-size: 80px;
-	font-family: header;
-	text-align: center;
-	word-spacing: -25px;
-	color: white;
-	background-color: transparent;
-}
+  .info{
+    position: relative;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f59a4f;
+    box-shadow: 0px -21px 91px -40px rgba(0,0,0,0.75);
+  
+  }
+  
+  .sticky{
+    position: sticky;
+    top: 0;
+    overflow-x: hidden;
+  }
+  
+  .info img{
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 60px -10px rgba(0,0,0,0.75);
+    z-index: 0;
+  }
+  
+  .modal{
+    position: absolute;
+    width: 100vw;
+    height: inherit;
+    background-color: #f59a4fab;
+    z-index: 1;
+  }
+  
+  .music{
+    height: 80vh;
+    background-color: #f59a4f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+  }
+  
+  .music h2{
+    margin-top: 5%;
+  }
 
-.box{
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	margin: auto;
-	width: 800px;
-	height: auto;
-	background-color: transparent;
-	
-}
+  .music h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-footer{
-	display: flex;
-	justify-content: center;
-	padding: 0;
-	color: white;
-}
-
-
-iframe{
-  display: flex;
-	justify-content: center;
-	width: 500px;
-	height: 300px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 25px;
-}}
+  }
+  
+  .setInfo{
+    background-image: url("images/smallflyer2.png");
+    background-size: contain;
+    background-color: black;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;  }
+  
+  footer{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+  }
+  
+  .flex-center {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .icon-3d {
+    font-size: 40px;
+    margin: 10px;
+  }
+  
+  iframe{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+    }
 
 @media screen and (min-width: 601px){
-
-
-/*
-@font-face{
-	font-family: header2;
-	src:url("style/Kiona/fonts/Kiona-Regular.woff");
-} */
 	
 a{
 	text-decoration: none;
 	color:white;
 	background-color: transparent;
 }
+
 header{
   margin: 0;
 	padding: 5px;
-  height: 30vh;
+  height: 25vh;
   position: relative;
-	background-color: rgba(223,176,205,1.00);
-	background-image:url("images/pinkfluff.gif");
-	background-position: center;
-	background-repeat: no-repeat;
-  background-blend-mode: darken;
+	background-color: #f59a4f;
+  /* background-image:url("images/transparent.gif"); */
+  background-position: center;
+  background-size: 450px;
+  background-repeat: no-repeat;
+  background-blend-mode: color-burn;
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
 }
 
 header img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 50%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 5%;
 }
 
 h2{
-	font-size: 60px;
+	font-size: 45px;
 	text-align: center;
 	color: white;
 	border: 1px solid white;
@@ -142,14 +223,15 @@ h2{
 }
 
 h3{
-  font-size: 40px;
+  font-size: 30px;
   color: white;
 }
 .info{
   position: relative;
   display: block;
   height: 100vh;
-  background-color: rgba(223,176,205,1.00);
+  width: 100vw;
+  background-color: #f59a4f;
   box-shadow: 0px -21px 91px -40px rgba(0,0,0,0.75);
 
 }
@@ -162,7 +244,7 @@ h3{
 
 .info img{
   position: absolute;
-  width: 800px;
+  width: 60vw;
   height: auto;
   top: 50%;
   left: 50%;
@@ -175,16 +257,20 @@ h3{
   position: absolute;
   width: 40vw;
   height: inherit;
-  background-color: #dfa5c9c7;
+  background-color: #f59a4fab;
   z-index: 1;
 }
 
 .music{
-  height: 80vh;
-  background-color: rgba(223,176,205,1.00);
+  height: 75vh;
+  background-color: #f59a4f;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.music h2{
+  margin-top: 5%;
 }
 
 .music h3{
@@ -192,65 +278,61 @@ h3{
 }
 
 .setInfo{
-  background-image: url("images/NU\ STRUT\ FLYER\ CST\ V1.png");
+  background-image: url("images/compresspng/NU\ STRUT\ FLYER\ CST\ V1-min.png");
   background-size: contain;
-  background-attachment: fixed ;
+  background-color: black;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
-
 }
 
 footer{
 	display: flex;
 	justify-content: center;
-	padding: 0;
+  padding: 0;
+  position: relative;
 }
 
 .flex-center {
-  width: 100%;
   margin: 0;
   padding: 0;
-  background: transparent;
-  
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  position: absolute;
+  left: 85%;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
 }
 
 .icon-3d {
-  padding: 10px;
-  color: white;
- }
+  font-size: 100px;
+  margin: 10px;
+}
 
 .icon-3d:hover {
-    -webkit-animation: icon3d 200ms infinite;
+    -webkit-animation: icon3d 200ms infinite; 
     animation: icon3d 200ms infinite;
-	cursor: pointer;
+    cursor: pointer;
 }
 
 @keyframes icon3d {
   0% {
-    text-shadow: 5px 4px 0 #F5F5F5, -5px -6px 0 #EBCFE1;
+    filter: drop-shadow(5px 4px 0px #F5F5F5);
   }
   25% {
-    text-shadow: -5px -6px #F5F5F5, 5px 4px #EBCFE1; 
+    filter: drop-shadow(-5px -6px 0px #ce7c39f5);
   }
   50% {
-    text-shadow: 5px -4px #F5F5F5, -8px 4px #EBCFE1;
+    filter: drop-shadow(5px -4px 0px #F5F5F5);
   }
   75% {
-    text-shadow: -8px -4px #F5F5F5, -5px -4px #EBCFE1;
+    filter: drop-shadow(-8px -4px 0px #ce7c39f5);
   }
   100% {
-    text-shadow: -5px 0 #F5F5F5, 5px -4px #EBCFE1;
+    filter: drop-shadow(-5px 0px #F5F5F5);
   }
 }
 
