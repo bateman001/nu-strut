@@ -12,193 +12,79 @@
   src:url("fonts/Kiona/fonts/Kiona-Regular.woff");
 }
 
-h2{
+h1, h2{
   font-family: header;
 }
 
-h3{
+h4, h3{
   font-family: header;  
+  color: white;
 }
 
-
-@media screen and (max-width: 600px){
-		
-	
-  a{
-    text-decoration: none;
-    color:white;
-    background-color: transparent;
-  }
-  header{
-    margin: 0;
-    padding: 5px;
-    height: 25vh;
-    position: relative;
-    background-color: #f59a4f;
-    /* background-image:url("images/transparent.gif"); */
-    background-position: center;
-    background-size: 450px;
-    background-repeat: no-repeat;
-    background-blend-mode: color-burn;
-    border: 1px solid white;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    
-  }
-  
-  header img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    display: block;
-    padding: 5%;
+p{
+  font-family: header;
+  color: white;
+  background-color: transparent;
 }
-  
-  h2{
-    font-size: 45px;
-    text-align: center;
-    color: white;
-    border: 1px solid white;
-    border-left: none;
-    border-right: none;
-    margin-top: 0;
-    background-color: transparent;
-  }
-  
-  h3{
-    font-size: 25px;
-    color: white;
-    text-align: center;
-  }
 
-  .info{
-    position: relative;
-    display: block;
-    height: 100vh;
-    width: 100vw;
-    background-color: #f59a4f;
-    box-shadow: 0px -21px 91px -40px rgba(0,0,0,0.75);
-  
-  }
-  
-  .sticky{
-    position: sticky;
-    top: 0;
-    overflow-x: hidden;
-  }
-  
-  .info img{
-    position: absolute;
-    width: 100vw;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 60px -10px rgba(0,0,0,0.75);
-    z-index: 0;
-  }
-  
-  .modal{
-    position: absolute;
-    width: 100vw;
-    height: inherit;
-    background-color: #f59a4fab;
-    z-index: 1;
-  }
-  
-  .music{
-    height: 80vh;
-    background-color: #f59a4f;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 0;
-  }
-  
-  .music h2{
-    margin-top: 5%;
-  }
+.flex{
+  display: flex;
+  flex-direction: column;
+}
 
-  .music h3{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.music h3{
+  height: 32.5vh;
+}
 
-  }
-  
-  .setInfo{
-    background-image: url("images/smallflyer2.png");
-    background-size: contain;
-    background-color: black;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 100vh;  }
-  
-  footer{
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    position: relative;
-  }
-  
-  .flex-center {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    z-index: 2;
-  }
-  
-  .icon-3d {
-    font-size: 40px;
-    margin: 10px;
-  }
-  
-  iframe{
-    display: flex;
-    justify-content: center;
-    width: 800px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 25px;
-  }
-    }
+.h2-wrapper{
+  height: auto;
+  text-align: center;
+  background-color: transparent;
+}
 
-@media screen and (min-width: 601px){
-	
-a{
-	text-decoration: none;
-	color:white;
-	background-color: transparent;
+h2{
+	text-align: center;
+	color: white;
+	border: 1px solid white;
+	border-left: none;
+	border-right: none;
+	margin-top: 0;
+  background-color: transparent;
+  width: 100%;
+}
+
+h3{
+  color: white;
+  text-align: center;
 }
 
 header{
   margin: 0;
-	padding: 5px;
-  height: 25vh;
   position: relative;
-	background-color: #f59a4f;
-  /* background-image:url("images/transparent.gif"); */
+  background-color: transparent;
+  /* background-color: #a27ada; */
+  /* background-image:url("images/bwgif.gif");
   background-position: center;
-  background-size: 450px;
+  background-size: 660px;
   background-repeat: no-repeat;
-  background-blend-mode: color-burn;
-  border: 1px solid white;
-  border-top: none;
-  border-left: none;
+  background-blend-mode: color-burn; */
+  /* border: 1px solid white; */
+  /* border-top: none; 
   border-right: none;
+  border-left: none; */
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 5%;
+}
 
+header p{
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+  background-color: transparent;
 }
 
 header img{
@@ -206,45 +92,61 @@ header img{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
   display: block;
-  padding: 5%;
+
 }
 
-h2{
-	font-size: 45px;
-	text-align: center;
-	color: white;
-	border: 1px solid white;
-	border-left: none;
-	border-right: none;
-	margin-top: 0;
-	background-color: transparent;
+.newMusic{
+  position: relative;
+  z-index: 1;
+  background-color: #a27ada;
+  background-image:url("images/bwgif.gif");
+  background-position: right 50% top 100%;
+  background-size: 900px;
+  background-repeat: repeat-y;
+  background-blend-mode: color-burn;
+
 }
 
-h3{
-  font-size: 30px;
+.music{
+  /* background-color: #a27ada; */
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button{
+  background-color: transparent;
+  border: 1px solid white;
   color: white;
+  font-family: header;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+
 }
+
 .info{
   position: relative;
   display: block;
   height: 100vh;
   width: 100vw;
-  background-color: #f59a4f;
+  background-color: #a27ada;
   box-shadow: 0px -21px 91px -40px rgba(0,0,0,0.75);
 
 }
 
 .sticky{
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
-  overflow-x: hidden;
 }
 
 .info img{
   position: absolute;
-  width: 60vw;
   height: auto;
   top: 50%;
   left: 50%;
@@ -255,30 +157,12 @@ h3{
 
 .modal{
   position: absolute;
-  width: 40vw;
   height: inherit;
-  background-color: #f59a4fab;
+  background-color: #9465d4cb;
   z-index: 1;
 }
 
-.music{
-  height: 75vh;
-  background-color: #f59a4f;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.music h2{
-  margin-top: 5%;
-}
-
-.music h3{
-  margin: 10%;
-}
-
 .setInfo{
-  background-image: url("images/compresspng/NU\ STRUT\ FLYER\ CST\ V1-min.png");
   background-size: contain;
   background-color: black;
   background-attachment: fixed;
@@ -287,24 +171,194 @@ h3{
   height: 100vh;
 }
 
-footer{
-	display: flex;
-	justify-content: center;
-  padding: 0;
-  position: relative;
-}
-
 .flex-center {
   margin: 0;
   padding: 0;
   position: absolute;
+  display: flex;
+  z-index: 2;
+}
+
+.trackArt{
+  box-shadow: 0px 0px 60px -10px rgba(0,0,0,0.75);
+}
+
+.soundcloud1{
+  font-size: 15px; 
+  text-align: center;
+  line-break: anywhere;
+  word-break: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+  font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+  font-weight: 100;
+  background-color: transparent;
+}
+
+.soundcloud2{
+  color: white; 
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+.soundcloud2:hover{
+  color: #231438;
+  font-size: 16px;
+}
+
+.description{
+  margin: 5%;
+  text-align: left;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 600px){
+	h2{
+    font-size: 45px;
+    width: 100vw;
+  }
+
+  h3{
+    font-size: 25px;
+  }
+
+  .h2-wrapper p{
+    text-align: center;
+  }
+
+  header{
+  height: 20vh;
+  }
+  
+  .newMusic{
+    height: 100%;
+  }
+
+  header img{
+  width: 70%;
+  padding: 5%;
+  }
+
+  .music{
+    height: 80vh;
+    z-index: 0;
+    box-shadow: 0px 12px 33px 3px rgba(0,0,0,0.75);
+  }
+   
+  .music h3{
+    height: auto;
+  }
+
+
+  .info img{
+    width: 100vw;
+  }
+  
+  .modal{
+    width: 100vw;
+  }
+
+  .setInfo{
+    background-image: url("images/smallflyer2.png");
+  }
+      
+  .flex-center {
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+  }
+  
+  
+  .icon-3d {
+    font-size: 40px;
+    margin: 10px;
+  }
+
+  .trackArt{
+    width: 50vh;
+    height: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 0;
+  }
+    
+}
+
+@media screen and (min-width: 601px){
+
+h1{
+  font-size: 65px;
+}
+h2{
+  font-size: 55px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+header{
+  height: 30vh;
+}
+
+header img{
+  width: 45vw;
+}
+
+.music h3{
+  height: auto;
+}
+
+.info img{
+  width: 60vw;
+}
+
+.modal{
+  width: 40vw;
+}
+
+.music{
+  height: 75vh;
+}
+
+.button:hover{
+  cursor: pointer;
+  color: #a27ada;
+  background-color: white;
+}
+
+.button-style-1{
+  transition-duration: 0.4s;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.setInfo{
+  background-image: url("images/compresspng/NU\ STRUT\ FLYER\ CST\ V1-min.png");
+}
+
+.set-description{
+  position: sticky;
+  top: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 10vh;
+  background-color: #986bd6d5 ;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-center {
   left: 85%;
   top: 50%;
   transform: translateY(-50%);
-  display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 2;
 }
 
 .icon-3d {
@@ -323,27 +377,46 @@ footer{
     filter: drop-shadow(5px 4px 0px #F5F5F5);
   }
   25% {
-    filter: drop-shadow(-5px -6px 0px #ce7c39f5);
+    filter: drop-shadow(-5px -6px 0px #ae95d1);
   }
   50% {
     filter: drop-shadow(5px -4px 0px #F5F5F5);
   }
   75% {
-    filter: drop-shadow(-8px -4px 0px #ce7c39f5);
+    filter: drop-shadow(-8px -4px 0px #ae95d1);
   }
   100% {
     filter: drop-shadow(-5px 0px #F5F5F5);
   }
 }
 
-iframe{
-	display: flex;
-	justify-content: center;
-	width: 800px;
-	height: 400px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 25px;
+.trackArt{
+  width: 400px;
+  height: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  padding: 0;
+  position: relative;
 }
-	
+
+.hover{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  background-color: #c1afdacb;
+}
+
+iframe{
+  width: 42%;
+  height: 50%;
+  position: fixed;
+  top: 12%;
+  left: 50%;
+  border-radius: 20px;
+  /* transform: translate(-50%, -50%); */
+  z-index: 0;
+}
+
 }
