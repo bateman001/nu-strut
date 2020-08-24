@@ -45,9 +45,8 @@ const changeDropDown = () => {
       <section className='setInfo'>
         <animated.div style={{transform: x.interpolate(x => `translate3d( 0, ${x * -1}% ,0)`)}} className='set-description'>
           <h3>Electric Hawk</h3>
-          <a href='#' className='button'>Watch</a>
+          <a href='https://www.youtube.com/watch?v=OWTJaMx8Nfw&t=5s' rel='noopener noreferrer' target='_blank' className='button button-style-2'>Watch</a>
         </animated.div> 
-      {/* <iframe title='nu strut set' src="https://www.youtube.com/embed/OWTJaMx8Nfw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   */}
       </section>
     </Waypoint>
 
@@ -57,7 +56,7 @@ const changeDropDown = () => {
           <Modal visible={visible} />
           <img src={pressPhoto} alt='press'/>
         <div className="flex-center">
-          <IconContext.Provider value={{ color: '#7b56af', className: 'icon-3d'}}>
+          <IconContext.Provider value={{ color: 'white', className: 'icon-3d'}}>
             <a href="https://soundcloud.com/nustrut" target="_blank" rel='noopener noreferrer'>
               <GrSoundcloud />
             </a>

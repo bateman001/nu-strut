@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import trackArt from '../images/trackArt2.png';
+import trackArt from '../images/funkaint-nustrut.png';
 import { useSpring, animated } from 'react-spring'
 
 export default function DesktopTrackArt(){

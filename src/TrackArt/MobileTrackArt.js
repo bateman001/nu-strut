@@ -1,5 +1,5 @@
 import React from 'react'
-import trackArt from '../images/trackArt2.png'
+import trackArt from '../images/funkaint-nustrut.png'
 
 export default function MobileTrackArt(){
     return(
