@@ -4,27 +4,30 @@ import pressPhoto from './images/compresspng/pressphoto2-min.png';
 import logo from './images/compresspng/NuStrut_white-min.png';
 import Modal from './Modal/Modal';
 import { Waypoint } from 'react-waypoint';
-import { useSpring, animated, config } from 'react-spring';
 import { GrTwitter, GrInstagram, GrFacebook, GrSoundcloud } from 'react-icons/gr';
 import {IconContext} from 'react-icons';
 import TrackArt from './TrackArt/TrackArt';
+import Flyer from './Flyer/Flyer'
+import { useSpring, animated, config } from 'react-spring';
 
 function App() {
 
   const [visible, setVisible] = useState(false)
   const [dropDownVisible, setDropDown] = useState(false)
+
   const { x } = useSpring({
     x: dropDownVisible ? 0 : 100,
     config: config.slow
   })
-const changeDropDown = () => {
+
+  const changeDropDown = () => {
     setDropDown(!dropDownVisible)
   }
 
   const changeVisibility = () => {
     setVisible(!visible)
   }
-
+  
   return (
   <div className="App">
   <section className="newMusic">
@@ -34,7 +37,7 @@ const changeDropDown = () => {
 
       <section className='music'>
       <div className='h2-wrapper'>
-            <h2>Presenting</h2>
+        <h2>New Music</h2>
       </div>
         <TrackArt />
       </section>
@@ -42,12 +45,13 @@ const changeDropDown = () => {
     </section>
 
     <Waypoint onEnter={changeDropDown} onLeave={changeDropDown} topOffset='20%' bottomOffset='100%'>
-      <section className='setInfo'>
+    <section className='setInfo'>
         <animated.div style={{transform: x.interpolate(x => `translate3d( 0, ${x * -1}% ,0)`)}} className='set-description'>
-          <h3>Electric Hawk</h3>
-          <a href='https://www.youtube.com/watch?v=OWTJaMx8Nfw&t=5s' rel='noopener noreferrer' target='_blank' className='button button-style-2'>Watch</a>
+            <h3>Electric Hawk</h3>
+            <a href='https://www.youtube.com/watch?v=OWTJaMx8Nfw&t=5s' rel='noopener noreferrer' target='_blank' className='button button-style-2'>Watch</a>
         </animated.div> 
-      </section>
+        <Flyer/>
+    </section>
     </Waypoint>
 
      

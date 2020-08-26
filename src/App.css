@@ -92,8 +92,7 @@ header img{
 }
 
 .music{
-  /* background-color: #a27ada; */
-  background-color: transparent;
+  background-color: #a27ada;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,7 +113,6 @@ header img{
 .info{
   position: relative;
   display: block;
-  height: 100vh;
   width: 100vw;
   background-color: #a27ada;
   box-shadow: 0px -21px 91px -40px rgba(0,0,0,0.75);
@@ -140,17 +138,8 @@ header img{
 .modal{
   position: absolute;
   height: inherit;
-  background-color: #9365d4da;
+  background-color: #9465d4cb;
   z-index: 1;
-}
-
-.setInfo{
-  background-size: contain;
-  background-color: black;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
 }
 
 .flex-center {
@@ -228,7 +217,7 @@ header img{
   .newMusic{
     height: 100%;
     position: relative;
-    z-index: 1;
+    z-index: 2;
   }
 
   header img{
@@ -247,6 +236,9 @@ header img{
     height: auto;
   }
 
+  .info{
+    height: 150vh;
+  }
 
   .info img{
     width: 100vw;
@@ -256,14 +248,32 @@ header img{
     width: 100vw;
   }
 
+  .flyer img{
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
   .setInfo{
-    background-image: url("images/smallflyer2.png");
+    height: 100vh;
+    background-color: black;
+    /*background-image: url("images/smallflyer2.png");
+    background-position: center; 
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: border-box; */
   }
      
   .set-description{
     position: sticky;
     top: 0;
-    z-index: 0;
+    z-index: 1;
     width: 100vw;
     height: 15vh;
     background-color: #986bd6d5 ;
@@ -275,6 +285,7 @@ header img{
   .set-description h3{
     margin: 2%;
   }
+
   .flex-center {
     top: 90%;
     left: 50%;
@@ -328,21 +339,17 @@ header img{
 
 .newMusic{
   background-color: #a27ada;
-  z-index: 1;
+  z-index: 2;
   position: relative;
-  /* 
-  background-image:url("images/bwgif.gif");
-  background-position: right 50% top 100%;
-  background-size: 900px;
-  background-repeat: repeat-y;
-  background-blend-mode: color-burn; */
-
 }
 
 .music h3{
   height: auto;
 }
 
+.info{
+  height: 100vh;
+}
 .info img{
   width: 60vw;
 }
@@ -387,8 +394,16 @@ header img{
 }
 
 .setInfo{
+  height: 100vh;
   background-image: url("images/compresspng/NU\ STRUT\ FLYER\ CST\ V1-min.png");
+    background-size: contain;
+    background-color: black;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+  
+
 
 .set-description{
   position: sticky;
