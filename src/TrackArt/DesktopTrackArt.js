@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import trackArt from '../images/funkaint-nustrut.png';
+import trackArt from '../images/compresspng/nualbumart-min.jpg'
 import { useSpring, animated } from 'react-spring'
 
 export default function DesktopTrackArt(){
@@ -12,7 +12,7 @@ export default function DesktopTrackArt(){
         <>
             <img className='trackArt' src={trackArt} alt='track art'></img>
             <animated.div style={hovered} onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)} className='hover'>
-                <a onMouseOver={() => setHover(true)} href='https://soundcloud.com/nustrut/au5-nasty-purple-funk-aint-even-nu-strut-remix-final-master/s-FJJfm638rw1' rel='noopener noreferrer' target='_blank' className='button button-style-1'>listen</a>
+                <a onMouseOver={() => setHover(true)} href='https://smarturl.it/westroxburyep' rel='noopener noreferrer' target='_blank' className='button button-style-1'>listen</a>
             </animated.div>
         </>
     )

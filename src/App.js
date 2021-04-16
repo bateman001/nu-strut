@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import pressPhoto from './images/compresspng/pressphoto2-min.png';
+// import pressPhoto from './images/compresspng/nuPromo.jpg';
 import logo from './images/compresspng/NuStrut_white-min.png';
 import Modal from './Modal/Modal';
 import { Waypoint } from 'react-waypoint';
@@ -58,7 +58,8 @@ function App() {
       <Waypoint onEnter={changeVisibility} onLeave={changeVisibility} bottomOffset='40%' topOffset='50%'>
         <div className="info">
           <Modal visible={visible} />
-          <img src={pressPhoto} alt='press'/>
+          <div className="promo-img"></div>
+          {/* <img src={pressPhoto} alt='press'/> */}
         <div className="flex-center">
           <IconContext.Provider value={{ color: 'white', className: 'icon-3d'}}>
             <a href="https://soundcloud.com/nustrut" target="_blank" rel='noopener noreferrer'>
