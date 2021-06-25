@@ -63,7 +63,7 @@ h3 {
 header {
     margin: 0;
     position: relative;
-    background-color: #a158c4;
+    background-color: #c57dbf;
     background-image: url("images/bwgif.gif");
     background-position: center;
     background-size: 660px;
@@ -93,7 +93,7 @@ header img {
 }
 
 .music {
-    background-color: #a158c4;
+    background-color: #c57dbf;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,7 +115,7 @@ header img {
     position: relative;
     display: block;
     width: 100vw;
-    background-color: #a158c4;
+    background-color: #c57dbf;
     box-shadow: 0px -21px 91px -40px rgba(0, 0, 0, 0.75);
 }
 
@@ -143,7 +143,7 @@ header img {
 .modal {
     position: absolute;
     height: inherit;
-    background-color: #a258c4bd;
+    background-color: #c57dbfbe;
     z-index: 1;
 }
 
@@ -211,7 +211,7 @@ header img {
         height: 20vh;
         position: relative;
         z-index: 1;
-        background-color: #a158c4;
+        background-color: #c57dbf;
         background-image: url("images/bwgif.gif");
         background-position: center;
         background-size: cover;
@@ -234,7 +234,7 @@ header img {
         height: auto;
         z-index: 0;
         box-shadow: 0px 12px 33px 3px rgba(0, 0, 0, 0.75);
-        background-color: #a158c4;
+        background-color: #c57dbf;
     }
 
     .music h3 {
@@ -281,7 +281,7 @@ header img {
         z-index: 1;
         width: 100vw;
         height: 15vh;
-        background-color: #a258c4bd;
+        background-color: #c57dbfbe;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -358,7 +358,7 @@ header img {
     }
 
     .newMusic {
-        background-color: #a158c4;
+        background-color: #c57dbf;
         z-index: 2;
         position: relative;
         min-height: 100vh;
@@ -430,7 +430,7 @@ header img {
         z-index: 0;
         width: 100vw;
         height: 10vh;
-        background-color: #a258c4bd;
+        background-color: #c57dbfbe;
         display: flex;
         justify-content: space-between;
     }
@@ -459,13 +459,13 @@ header img {
             filter: drop-shadow(5px 4px 0px #f5f5f5);
         }
         25% {
-            filter: drop-shadow(-5px -6px 0px #a258c4bd);
+            filter: drop-shadow(-5px -6px 0px #c57dbfbe);
         }
         50% {
             filter: drop-shadow(5px -4px 0px #f5f5f5);
         }
         75% {
-            filter: drop-shadow(-8px -4px 0px #a258c4bd);
+            filter: drop-shadow(-8px -4px 0px #c57dbfbe);
         }
         100% {
             filter: drop-shadow(-5px 0px #f5f5f5);

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import trackArt from "../images/compresspng/pornstache.png";
+import trackArt from "../images/you.png";
 import { useSpring, animated } from "react-spring";
 
 export default function DesktopTrackArt() {
@@ -19,7 +19,7 @@ export default function DesktopTrackArt() {
             >
                 <a
                     onMouseOver={() => setHover(true)}
-                    href="https://electrichawk.fanlink.to/Pornstache?fbclid=IwAR2VjOaBQdTT1PTVraI1u4UKy6OUdJup5EzqsNR9JBvSklq_LYPf1gTzYoQ"
+                    href="https://fanlink.to/fDsW"
                     rel="noopener noreferrer"
                     target="_blank"
                     className="button button-style-1"
